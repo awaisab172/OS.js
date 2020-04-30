@@ -18,7 +18,9 @@
     "make:iframe-application": "osjs-cli make:iframe-application",
     "make:provider": "osjs-cli make:provider",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "osjs"
@@ -66,7 +68,8 @@
     "@osjs/server": "^3.0.44",
     "@osjs/settings-application": "^1.1.1",
     "@osjs/standard-theme": "^4.0.6",
-    "@osjs/textpad-application": "^1.2.4"
+    "@osjs/textpad-application": "^1.2.4",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -78,5 +81,6 @@
   "homepage": "https://www.os-js.org",
   "engines": {
     "node": ">=8.0.0"
-  }
+  },
+  "snyk": true
 }
